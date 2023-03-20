@@ -31,6 +31,10 @@ namespace EjercicioGraficoLogo
             papel.DrawLine(lapiz, 100, 50, 100, 10);
             papel.DrawLine(lapiz, 100, 10, 140, 50);
             papel.DrawLine(lapiz, 140, 50, 100, 50);
+
+            papel.DrawLine(lapiz, 10, 100, 10, 160);
+            papel.DrawLine(lapiz, 10, 160, 30, 160);
+            papel.DrawLine(lapiz, 30, 160, 10, 100);
         }
 
         private void button2_Click(object sender, EventArgs e)
