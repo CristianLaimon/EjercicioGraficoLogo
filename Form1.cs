@@ -27,6 +27,10 @@ namespace EjercicioGraficoLogo
             papel.DrawRectangle(lapiz, 100, 100, 60, 60);
             papel.DrawRectangle(lapiz, 100, 100, 40, 40);
             papel.DrawRectangle(lapiz, 100, 100, 20, 20);
+
+            papel.DrawLine(lapiz, 100, 50, 100, 10);
+            papel.DrawLine(lapiz, 100, 10, 140, 50);
+            papel.DrawLine(lapiz, 140, 50, 100, 50);
         }
 
         private void button2_Click(object sender, EventArgs e)
