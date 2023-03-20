@@ -14,8 +14,6 @@ namespace EjercicioGraficoLogo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ReiniciarBoceto();
-
             Graphics papel;
             papel = pictureBox1.CreateGraphics();
             Pen lapiz = new Pen(Color.Blue);
@@ -39,15 +37,18 @@ namespace EjercicioGraficoLogo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ReiniciarBoceto();
 
             Graphics papel;
             papel = pictureBox1.CreateGraphics();
-            Pen lapiz = new Pen(Color.Blue);
+            Pen lapiz = new Pen(Color.Red);
 
-            papel.DrawLine(lapiz, 20, 80, 70, 10);
-            papel.DrawLine(lapiz, 70, 10, 120, 80);
-            papel.DrawLine(lapiz, 20, 80, 120, 80);
+            papel.DrawRectangle(lapiz, 250, 150, 50, 50);
+            papel.DrawLine(lapiz, 250, 150, 250, 100);
+            papel.DrawLine(lapiz, 250, 100, 300, 150);
+
+            papel.DrawRectangle(lapiz, 250, 40, 80, 20);
+            papel.DrawLine(lapiz, 250, 40, 250, 20);
+            papel.DrawLine(lapiz, 250, 20, 330, 40);
         }
 
         public void ReiniciarBoceto()
