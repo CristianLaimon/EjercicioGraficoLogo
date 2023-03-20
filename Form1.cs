@@ -5,16 +5,16 @@ namespace EjercicioGraficoLogo
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.CreateGraphics().Clear(Color.White);
+            ReiniciarBoceto();
 
             Graphics papel;
             papel = pictureBox1.CreateGraphics();
@@ -39,7 +39,7 @@ namespace EjercicioGraficoLogo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            pictureBox1.CreateGraphics().Clear(Color.White);
+            ReiniciarBoceto();
 
             Graphics papel;
             papel = pictureBox1.CreateGraphics();
@@ -48,6 +48,16 @@ namespace EjercicioGraficoLogo
             papel.DrawLine(lapiz, 20, 80, 70, 10);
             papel.DrawLine(lapiz, 70, 10, 120, 80);
             papel.DrawLine(lapiz, 20, 80, 120, 80);
+        }
+
+        public void ReiniciarBoceto()
+        {
+            pictureBox1.CreateGraphics().Clear(Color.White);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ReiniciarBoceto();
         }
     }
 }
